@@ -1,6 +1,110 @@
-body {
+
+/* Global */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header, nav, main, footer { padding: 1rem; }
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     background-color: aqua;
+}
+
+header {
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: aqua;
+}
+
+h1 {
+    margin: 10px;
+    align-items: center;
+    position: relative;
+    font-size: 6vw;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    background-color: whitesmoke;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategray;
+    background-color: whitesmoke;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+
+main {
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+h2 {
+    margin: 10px;
+    align-items: center;
+    position: relative;
+    font-size: 6vw;
+    text-align: center;
+}
+
+footer {
+    background-color: whitesmoke;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Medium screens */
+@media only screen and (min-width: 600px) {
+ nav ul { display: flex; gap: 1rem; }
+ main {background: yellow;}
+}
+
+/* Large screens */
+@media only screen and (min-width: 900px) {
+ body { max-width: 900px; margin: auto; }
+ h1 { font-size: 3rem; }
+  main {background: blue;}
+}
+
+/* Extra large */
+@media only screen and (min-width: 1200px) {
+  main {background: red;}
 }
